@@ -14,6 +14,7 @@
   .picture li a {display:block; margin:5px; border: 1px }
   .picture li img { display:block; width:50%;  height:auto;}
   .picture li img:hover { display:block; width:100%;  height:auto;} 
+  
 </style>
 </head>
 
@@ -170,6 +171,25 @@
 		</div>
 		<div data-role="footer" data-theme="b">
 		</div>
+		<script>
+	$(document).ready( function() {  
+		// show/hide/toggle 효과	
+		$('#hide').click(function() {
+				$('input[name="text1"]').hide(600);
+		});		
+		$('#show').click(function() {
+				$('input[name="text1"]').show(1000);
+		});					
+		$('#toggle').click(function() {
+				$('input[name="text1"]').toggle(2000);
+		});					
+	});
+</script>
+         <h1>show/hide/toggle 효과</h1>
+		<button id="hide"> hide </button>			
+		<button id="show"> show </button>		
+		<button id="toggle"> toggle </button>		
+		<div><input type="text" name="text1" value="만든이 방수진 입니다!"/></div>
 	</div>
 	
 </div>	
